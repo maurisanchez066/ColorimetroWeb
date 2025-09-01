@@ -319,7 +319,7 @@ Azul = st.number_input("Ángulo Azul", min_value=0, max_value=360, value=45)
 Verde = st.number_input("Ángulo Verde", min_value=0, max_value=360, value=88)
 Rojo = st.number_input("Ángulo Rojo", min_value=0, max_value=360, value=282)
 
-x, y = xy_desde_angulos(Azul, Verde, Rojo, coeffs, xs, ys, zs, scale_factors=scales_factors)
+x, y = xy_desde_angulos(Rojo, Verde, Azul, coeffs, xs, ys, zs, scale_factors=scales_factors)
 
 
 st.markdown(f"""
