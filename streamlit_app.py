@@ -315,8 +315,8 @@ scales_factors = (Curvas_Intensidad_Rojo_Acotadas["Grados150"] / Integrales_Curv
 
 st.title("¡Hola! Ingresá los angulos del triñometro")
 
-Azul = st.number_input("Ángulo Azul", min_value=0, max_value=360, value=30)
-Verde = st.number_input("Ángulo Verde", min_value=0, max_value=360, value=67)
+Azul = st.number_input("Ángulo Azul", min_value=0, max_value=360, value=45)
+Verde = st.number_input("Ángulo Verde", min_value=0, max_value=360, value=88)
 Rojo = st.number_input("Ángulo Rojo", min_value=0, max_value=360, value=282)
 
 x, y = xy_desde_angulos(Azul, Verde, Rojo, coeffs, xs, ys, zs, scale_factors=scales_factors)
