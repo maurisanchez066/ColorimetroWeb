@@ -1,5 +1,6 @@
 import streamlit as st
 import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 import numpy as np
 from typing import Tuple, Dict, Sequence
 
@@ -338,3 +339,13 @@ st.markdown(f"""
 y = {y:.3f}
 </h1>
 """, unsafe_allow_html=True)
+
+img = mpimg.imread("cie_horseshoe.png")
+
+fig, ax = plt.subplots()
+ax.imshow(img, extent=[0, 0.8, 0, 0.9], aspect='auto')
+ax.scatter(x, y, c='red', s=100, edgecolors='black')
+ax.set_xlabel("x")
+ax.set_ylabel("y")
+st.pyplot(fig)
+
