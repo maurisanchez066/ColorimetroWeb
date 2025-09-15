@@ -367,7 +367,7 @@ y = {y:.2f}
 </h1>
 """, unsafe_allow_html=True)
 
-img = mpimg.imread("cie_horseshoe.png")
+img = mpimg.imread("cie_horseshoe.jpg")
 
 fig, ax = plt.subplots()
 ax.imshow(img, extent=[0, 0.8, 0, 0.9], aspect='auto')
